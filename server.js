@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 // =====================================================
 
 // Serve frontend files from public/
-app.use(express.static("public"));
+app.use(express.static("."));
 
 // Allow Express to read JSON sent by frontend
 app.use(express.json());
