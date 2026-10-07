@@ -2265,3 +2265,512 @@ button {
 .map-card {
     border-radius: 10px;
 }
+
+/* =========================================================
+   FINAL MOBILE / RESPONSIVE OVERRIDES
+========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: 72px;
+    }
+
+    .nav-container {
+        width: calc(100% - 32px);
+        min-height: 72px;
+
+        margin: 0 auto;
+
+        gap: 0;
+    }
+
+    /* Real logo */
+
+    .logo {
+        width: 115px;
+        height: 50px;
+
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 115px;
+        height: 50px;
+
+        object-fit: contain;
+    }
+
+    /* Hide desktop JOIN NOW */
+
+    .nav-container > .join-now {
+        display: none;
+    }
+
+    /* Hamburger */
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+
+        width: 46px;
+        height: 46px;
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+
+        background: transparent;
+        color: white;
+
+        font-size: 1.6rem;
+
+        cursor: pointer;
+
+        transition: 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+
+    /* Mobile dropdown */
+
+    .nav-menu {
+        position: fixed;
+
+        top: 72px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 1.4rem 1rem 1.8rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0.5rem;
+
+        background: rgba(8, 8, 8, 0.98);
+
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.45);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transform: translateY(-12px);
+
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+
+        max-height: calc(100vh - 72px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        width: 100%;
+
+        padding: 0.9rem 0;
+
+        font-size: 0.9rem;
+    }
+
+    .nav-link::after {
+        bottom: 2px;
+    }
+
+    /* Auth buttons inside mobile menu */
+
+    .nav-menu .nav-button {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 0.9rem;
+
+        margin-top: 0.35rem;
+    }
+
+    /* Mobile JOIN NOW */
+
+    .nav-menu .mobile-join {
+        display: flex;
+    }
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 100svh;
+
+        padding-top: 72px;
+
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: calc(100% - 36px);
+
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.7rem;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(3rem, 14vw, 4.7rem);
+
+        line-height: 0.92;
+
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+
+        margin-top: 1.5rem;
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        margin-top: 2rem;
+
+        gap: 0.8rem;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+
+        min-height: 58px;
+    }
+
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+@media (max-width: 700px) {
+
+    .stats {
+        padding: 1.8rem 0;
+    }
+
+    .stats-container {
+        width: 100%;
+
+        padding: 0 0.4rem;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 0;
+    }
+
+    .stat {
+        padding: 0.8rem 0.2rem;
+
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+
+    .stat:last-child {
+        border-right: none;
+    }
+
+    .stat:nth-child(odd) {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .stat h2 {
+        font-size: 2rem;
+    }
+
+    .stat p {
+        margin-top: 0.35rem;
+
+        font-size: 0.55rem;
+
+        letter-spacing: 1px;
+    }
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+@media (max-width: 700px) {
+
+    .about-preview {
+        padding: 5rem 0;
+    }
+
+    .about-preview .section-container {
+        width: calc(100% - 36px);
+
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+
+        height: min(85vw, 420px);
+
+        object-fit: cover;
+    }
+
+    .image-badge {
+        width: 105px;
+        height: 105px;
+
+        right: 8px;
+        bottom: -12px;
+    }
+
+    .image-badge strong {
+        font-size: 3rem;
+    }
+
+    .image-badge span {
+        font-size: 0.48rem;
+
+        letter-spacing: 0.8px;
+    }
+
+    .about-content h2 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+    .about-content > p:not(.section-label) {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+@media (max-width: 700px) {
+
+    .section-heading {
+        width: calc(100% - 36px);
+
+        margin-bottom: 3rem;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+    .section-heading > p:last-child {
+        font-size: 0.9rem;
+    }
+
+    .features,
+    .membership-preview {
+        padding: 5rem 0;
+    }
+
+    .feature-grid {
+        width: calc(100% - 36px);
+
+        grid-template-columns: 1fr;
+
+        gap: 0.8rem;
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+}
+
+
+/* =========================
+   GYM IMAGE GRID
+========================= */
+
+@media (max-width: 700px) {
+
+    .gym-showcase {
+        width: calc(100% - 36px);
+
+        padding: 5rem 0;
+    }
+
+    .gym-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            minmax(240px, 72vw)
+            minmax(220px, 62vw)
+            minmax(220px, 62vw);
+
+        gap: 0.8rem;
+    }
+
+    .gym-card-large {
+        grid-row: auto;
+    }
+
+    .gym-card-content {
+        left: 1.2rem;
+        bottom: 1.2rem;
+    }
+
+    .gym-card-content h3 {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+@media (max-width: 700px) {
+
+    .pricing-grid {
+        width: calc(100% - 36px);
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .pricing-card {
+        padding: 2.2rem 1.5rem;
+    }
+
+    .pricing-card h3 {
+        font-size: 3rem;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-8px);
+    }
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+@media (max-width: 700px) {
+
+    .contact-container {
+        width: calc(100% - 36px);
+
+        gap: 3rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.6rem 1.2rem;
+    }
+
+    .contact-info h2 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        width: calc(100% - 36px);
+
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+    }
+
+    .footer {
+        padding-top: 4rem;
+    }
+
+}
+
+
+/* =========================
+   RED ACCENT HOVER
+========================= */
+
+.feature-card:hover {
+    border-color: rgba(255, 43, 43, 0.45);
+}
