@@ -2774,3 +2774,6 @@ body {
 .feature-card:hover {
     border-color: rgba(255, 43, 43, 0.45);
 }
+.mobile-join {
+    display: none;
+}
