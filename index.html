@@ -2,103 +2,306 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>RedRocks Gym</title>
+
 </head>
 
+
 <body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
     <header class="navbar">
+
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span><img src="" alt=""></span>
+
+            <!-- Real RedRocks logo -->
+            <a href="index.html" class="logo">
+
+                <img
+                    src="logo.png"
+                    alt="RedRocks Fitness"
+                >
+
             </a>
 
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link-active">Home</a>
-                <a href="membership.html" class="nav-link">Membership</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="login.html" class="nav-button">
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a
+                    href="index.html"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="membership.html"
+                    class="nav-link"
+                >
+                    Membership
+                </a>
+
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+
+                <a
+                    href="contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+
+                <a
+                    href="login.html"
+                    class="nav-button"
+                >
                     SIGN IN
                 </a>
 
-                <a href="signup.html" class="nav-button">
+
+                <a
+                    href="signup.html"
+                    class="nav-button"
+                >
                     SIGN UP
                 </a>
+
+
+                <!-- Mobile JOIN NOW -->
+                <a
+                    href="membership.html#plans"
+                    class="nav-button mobile-join"
+                >
+                    JOIN NOW
+                </a>
+
             </nav>
-           <a href="membership.html#plans" class="nav-button join-now">
-    JOIN NOW
-</a>
-            <button class="menu-toggle" id="menuToggle">
+
+
+            <!-- Desktop JOIN NOW -->
+            <a
+                href="membership.html#plans"
+                class="nav-button join-now"
+            >
+                JOIN NOW
+            </a>
+
+
+            <!-- Mobile menu button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
                 ☰
             </button>
+
         </div>
+
     </header>
+
+
+
     <main>
-        <section class="home" id="home">
+
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+
+        <section class="hero" id="home">
+
             <div class="hero-overlay"></div>
+
+
             <div class="hero-content">
+
                 <p class="hero-subtitle">
                     TRAIN. GRIND. EVOLVE.
                 </p>
-                <h1>BUILD THE <span>STRONGEST</span> VERSION OF YOU</h1>
+
+
+                <h1>
+                    BUILD THE
+                    <span>STRONGEST</span>
+                    VERSION OF YOU
+                </h1>
+
+
                 <p class="hero-description">
                     Forge your body. Build your discipline.
                     Become someone you are proud of.
                 </p>
+
+
                 <div class="hero-buttons">
-                    <a href="membership.html" class="primary-button"> JOIN THE GYM</a>
-                    <a href="membership.html" class="secondary-button">
+
+                    <a
+                        href="membership.html"
+                        class="primary-button"
+                    >
+                        JOIN THE GYM
+                    </a>
+
+
+                    <a
+                        href="membership.html"
+                        class="secondary-button"
+                    >
                         EXPLORE
                     </a>
+
                 </div>
+
+
                 <div class="scroll-indicator">
-                    <span>SCROLL</span>
+
+                    <span>
+                        SCROLL
+                    </span>
+
                     <div class="scroll-line"></div>
+
                 </div>
 
 
             </div>
+
         </section>
-        <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+        <!-- =====================================================
+             STATS
+        ====================================================== -->
+
         <section class="stats">
+
             <div class="stats-container">
-                <div class="stat">
-                    <h2>5K+</h2>
-                    <p>Members</p>
-                </div>
-                <div class="stat">
-                    <h2>Professional</h2>
-                    <p>Trainers</p>
-                </div>
-                <div class="stat">
-                    <h2>24/7</h2>
-                    <p>Access</p>
-                </div>
-            </div>
-        </section>
-        <!--------------------------------------------------------------------------------------------------------------------------------------->
-        <section class="about-preview" id="about-preview">
-            <div class="section-container">
 
-                <div class="about-image">
-                    <img src="demo1.png" alt="">
-                </div>
 
-                <div class="image-badge">
-                    <strong>01</strong>
-                    <span>TRAIN DIFFERENT</span>
-                </div>
-
-                <div class="about-content">
-                    <p class="section-label">WHO ARE WE</p>
+                <div class="stat">
 
                     <h2>
-                        MORE THAN
-                        <span>A GYM</span>
+                        5K+
                     </h2>
+
+                    <p>
+                        Members
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h2>
+                        25+
+                    </h2>
+
+                    <p>
+                        Professional Trainers
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h2>
+                        24/7
+                    </h2>
+
+                    <p>
+                        Access
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT PREVIEW
+        ====================================================== -->
+
+        <section
+            class="about-preview"
+            id="about-preview"
+        >
+
+            <div class="section-container">
+
+
+                <!-- Image + badge -->
+                <div class="about-image">
+
+                    <img
+                        src="demo1.png"
+                        alt="RedRocks gym interior"
+                    >
+
+
+                    <div class="image-badge">
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <span>
+                            TRAIN DIFFERENT
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Content -->
+                <div class="about-content">
+
+                    <p class="section-label">
+                        WHO ARE WE
+                    </p>
+
+
+                    <h2>
+
+                        MORE THAN
+
+                        <span>
+                            A GYM
+                        </span>
+
+                    </h2>
+
 
                     <p>
                         RedRocks is built for people who refuse to settle.
@@ -107,118 +310,197 @@
                         environment is designed to push you forward.
                     </p>
 
+
                     <p>
                         Premium equipment, experienced trainers and a
                         community that keeps you accountable.
                     </p>
 
-                    <a href="about.html" class="text-link">
+
+                    <a
+                        href="about.html"
+                        class="text-link"
+                    >
                         DISCOVER OUR STORY →
                     </a>
+
                 </div>
 
+
             </div>
+
         </section>
-        <!-------------------------------------------------------------------------------------------------------------------------------------------->>
+
+
+
+        <!-- =====================================================
+             FEATURES
+        ====================================================== -->
+
         <section class="features">
+
+
             <div class="section-heading">
-                <p class="section-label">WHY RED ROCKS</p>
+
+                <p class="section-label">
+                    WHY RED ROCKS
+                </p>
+
+
                 <h2>
+
                     BUILT FOR
-                    <span>RESULTS.</span>
+
+                    <span>
+                        RESULTS.
+                    </span>
+
                 </h2>
+
+
                 <p>
                     Everything you need to train harder,
                     recover better and keep progressing.
                 </p>
+
             </div>
+
+
+
             <div class="feature-grid">
+
+
+                <!-- Feature 1 -->
+
                 <article class="feature-card">
+
 
                     <div class="feature-number">
                         01
                     </div>
 
+
                     <div class="feature-icon">
                         ⚡
                     </div>
 
+
                     <h3>
                         PREMIUM EQUIPMENT
                     </h3>
+
 
                     <p>
                         High-quality strength and cardio equipment
                         designed for serious training.
                     </p>
 
+
                 </article>
 
+
+
+                <!-- Feature 2 -->
+
                 <article class="feature-card">
+
 
                     <div class="feature-number">
                         02
                     </div>
 
+
                     <div class="feature-icon">
                         🏋
                     </div>
 
+
                     <h3>
                         EXPERT TRAINERS
                     </h3>
+
 
                     <p>
                         Get guidance from experienced trainers who
                         understand how to build sustainable results.
                     </p>
 
+
                 </article>
 
+
+
+                <!-- Feature 3 -->
+
                 <article class="feature-card">
+
 
                     <div class="feature-number">
                         03
                     </div>
 
+
                     <div class="feature-icon">
                         🔥
                     </div>
 
+
                     <h3>
                         STRONG COMMUNITY
                     </h3>
+
 
                     <p>
                         Train alongside people who are serious about
                         improving themselves every single day.
                     </p>
 
+
                 </article>
 
+
+
+                <!-- Feature 4 -->
+
                 <article class="feature-card">
+
 
                     <div class="feature-number">
                         04
                     </div>
 
+
                     <div class="feature-icon">
                         🕒
                     </div>
 
+
                     <h3>
                         24/7 ACCESS
                     </h3>
+
 
                     <p>
                         Train according to your schedule with
                         round-the-clock access.
                     </p>
 
+
                 </article>
+
+
             </div>
+
         </section>
+
+
+
+        <!-- =====================================================
+             GYM SHOWCASE
+        ====================================================== -->
+
         <section class="gym-showcase">
+
 
             <div class="section-heading">
 
@@ -226,341 +508,555 @@
                     THE REDROCKS EXPERIENCE
                 </p>
 
+
                 <h2>
+
                     TRAIN IN AN
-                    <span>ENVIRONMENT</span>
+
+                    <span>
+                        ENVIRONMENT
+                    </span>
+
                     THAT PUSHES YOU.
+
                 </h2>
 
             </div>
 
 
+
             <div class="gym-grid">
 
+
                 <!-- Large image -->
+
                 <article class="gym-card gym-card-large">
 
-                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80"
-                        alt="Person lifting weights in gym">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80"
+                        alt="Person lifting weights in gym"
+                    >
+
 
                     <div class="gym-card-content">
 
-                        <p>STRENGTH</p>
+
+                        <p>
+                            STRENGTH
+                        </p>
+
 
                         <h3>
                             BUILT FOR HEAVY LIFTS
                         </h3>
 
+
                     </div>
+
 
                 </article>
 
 
+
                 <!-- Card 2 -->
+
                 <article class="gym-card">
 
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
-                        alt="Athlete working out">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
+                        alt="Athlete working out"
+                    >
+
 
                     <div class="gym-card-content">
 
-                        <p>PERFORMANCE</p>
+
+                        <p>
+                            PERFORMANCE
+                        </p>
+
 
                         <h3>
                             PUSH YOUR LIMITS
                         </h3>
 
+
                     </div>
+
 
                 </article>
 
 
+
                 <!-- Card 3 -->
+
                 <article class="gym-card">
 
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
-                        alt="Modern gym interior">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
+                        alt="Modern gym interior"
+                    >
+
 
                     <div class="gym-card-content">
 
-                        <p>ENVIRONMENT</p>
+
+                        <p>
+                            ENVIRONMENT
+                        </p>
+
 
                         <h3>
                             BUILT TO INSPIRE
                         </h3>
 
+
                     </div>
 
+
                 </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- ========================================
+
+        <!-- =====================================================
              MEMBERSHIP PREVIEW
-        ======================================== -->
+        ====================================================== -->
 
         <section class="membership-preview">
 
+
             <div class="section-heading">
+
 
                 <p class="section-label">
                     MEMBERSHIP
                 </p>
 
+
                 <h2>
+
                     CHOOSE YOUR
-                    <span>LEVEL.</span>
+
+                    <span>
+                        LEVEL.
+                    </span>
+
                 </h2>
+
 
                 <p>
                     Flexible plans designed for different training goals.
                 </p>
 
+
             </div>
+
 
 
             <div class="pricing-grid">
 
+
                 <!-- Basic -->
+
                 <article class="pricing-card">
+
 
                     <p class="plan-name">
                         BASIC
                     </p>
 
+
                     <h3>
+
                         ₹1500
-                        <span>/ MONTH</span>
+
+                        <span>
+                            / MONTH
+                        </span>
+
                     </h3>
+
 
                     <p class="plan-description">
                         Everything you need to start your fitness journey.
                     </p>
 
+
                     <ul>
 
-                        <li>✓ Full gym access</li>
-                        <li>✓ Locker access</li>
-                        <li>✓ Cardio equipment</li>
-                        <li>✓ Free fitness assessment</li>
+                        <li>
+                            ✓ Full gym access
+                        </li>
+
+                        <li>
+                            ✓ Locker access
+                        </li>
+
+                        <li>
+                            ✓ Cardio equipment
+                        </li>
+
+                        <li>
+                            ✓ Free fitness assessment
+                        </li>
 
                     </ul>
 
-                    <a href="membership.html" class="plan-button">
+
+                    <a
+                        href="membership.html"
+                        class="plan-button"
+                    >
                         VIEW PLAN
                     </a>
+
 
                 </article>
 
 
+
                 <!-- Pro -->
+
                 <article class="pricing-card featured">
+
 
                     <div class="popular-tag">
                         MOST POPULAR
                     </div>
 
+
                     <p class="plan-name">
                         PRO
                     </p>
 
+
                     <h3>
+
                         ₹1,699
-                        <span>/ MONTH</span>
+
+                        <span>
+                            / MONTH
+                        </span>
+
                     </h3>
+
 
                     <p class="plan-description">
                         For people serious about their transformation.
                     </p>
 
+
                     <ul>
 
-                        <li>✓ Everything in Basic</li>
-                        <li>✓ Personal trainer sessions</li>
-                        <li>✓ Customized workout plan</li>
-                        <li>✓ Nutrition guidance</li>
+                        <li>
+                            ✓ Everything in Basic
+                        </li>
+
+                        <li>
+                            ✓ Personal trainer sessions
+                        </li>
+
+                        <li>
+                            ✓ Customized workout plan
+                        </li>
+
+                        <li>
+                            ✓ Nutrition guidance
+                        </li>
 
                     </ul>
 
-                    <a href="membership.html" class="plan-button">
+
+                    <a
+                        href="membership.html"
+                        class="plan-button"
+                    >
                         VIEW PLAN
                     </a>
+
 
                 </article>
 
 
+
                 <!-- Elite -->
+
                 <article class="pricing-card">
+
 
                     <p class="plan-name">
                         ELITE
                     </p>
 
+
                     <h3>
+
                         ₹2,000
-                        <span>/ MONTH</span>
+
+                        <span>
+                            / MONTH
+                        </span>
+
                     </h3>
+
 
                     <p class="plan-description">
                         The complete premium fitness experience.
                     </p>
 
+
                     <ul>
 
-                        <li>✓ Everything in Pro</li>
-                        <li>✓ Unlimited trainer sessions</li>
-                        <li>✓ Advanced body analysis</li>
-                        <li>✓ Premium support</li>
+                        <li>
+                            ✓ Everything in Pro
+                        </li>
+
+                        <li>
+                            ✓ Unlimited trainer sessions
+                        </li>
+
+                        <li>
+                            ✓ Advanced body analysis
+                        </li>
+
+                        <li>
+                            ✓ Premium support
+                        </li>
 
                     </ul>
 
-                    <a href="membership.html" class="plan-button">
+
+                    <a
+                        href="membership.html"
+                        class="plan-button"
+                    >
                         VIEW PLAN
                     </a>
 
+
                 </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- ========================================
+
+        <!-- =====================================================
              CTA SECTION
-        ========================================= -->
+        ====================================================== -->
 
         <section class="cta">
 
+
             <div class="cta-content">
+
 
                 <p class="section-label">
                     YOUR TIME IS NOW
                 </p>
 
+
                 <h2>
+
                     STOP WAITING.
-                    <span>START BUILDING.</span>
+
+                    <span>
+                        START BUILDING.
+                    </span>
+
                 </h2>
+
 
                 <p>
                     Your future self is built by what you do today.
                 </p>
 
-                <a href="membership.html" class="primary-button">
+
+                <a
+                    href="membership.html"
+                    class="primary-button"
+                >
                     START YOUR JOURNEY
                 </a>
+
 
             </div>
 
         </section>
 
+
     </main>
 
 
-    <!-- ========================================
+
+    <!-- =====================================================
          FOOTER
-    ========================================= -->
+    ====================================================== -->
 
     <footer class="footer">
 
+
         <div class="footer-container">
 
+
             <!-- Brand -->
+
             <div class="footer-brand">
 
-                <a href="index.html" class="logo">
-                    RED<span>ROCKS</span>
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span>
+                        RED<span>ROCKS</span>
+                    </span>
+
                 </a>
+
 
                 <p>
                     Train hard. Stay consistent.
                     Build something stronger.
                 </p>
 
+
             </div>
 
 
+
             <!-- Quick Links -->
+
             <div class="footer-column">
+
 
                 <h3>
                     QUICK LINKS
                 </h3>
 
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="membership.html">Membership</a>
-                <a href="contact.html">Contact</a>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="membership.html">
+                    Membership
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
 
             </div>
 
 
+
             <!-- Contact -->
+
             <div class="footer-column">
+
 
                 <h3>
                     CONTACT
                 </h3>
 
+
                 <p>
                     Amritsar, Punjab
                 </p>
+
 
                 <p>
                     +91 xxxxxxxxxx
                 </p>
 
+
                 <p>
                     hello@RedRocks.com
                 </p>
 
+
             </div>
 
 
+
             <!-- Socials -->
+
             <div class="footer-column">
+
 
                 <h3>
                     FOLLOW US
                 </h3>
 
+
                 <div class="social-links">
+
 
                     <a href="#">
                         Instagram
                     </a>
 
+
                     <a href="#">
                         YouTube
                     </a>
+
 
                     <a href="#">
                         Facebook
                     </a>
 
+
                 </div>
 
+
             </div>
+
 
         </div>
 
 
+
         <div class="footer-bottom">
+
 
             <p>
                 © 2026 RedRocks Fitness. All rights reserved.
             </p>
 
+
         </div>
+
 
     </footer>
 
+
+
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
 
-    </main>
+
 </body>
 
 </html>
